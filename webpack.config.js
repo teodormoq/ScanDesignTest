@@ -28,14 +28,26 @@ module.exports = {
             {
                 test: /\.scss$/,
                 exclude: /node_modules/,
-                //fallback: "style-loader",
                 use: [
                     MiniCssExtractPlugin.loader,
                     "css-loader",
                     "postcss-loader",
                     "sass-loader"
                 ]
-            }
+            },
+			{
+				type: 'javascript/auto',
+				test: /\.json$/,
+				exclude: /(node_modules|bower_components)/,
+				use: [
+                    {
+    					loader: 'file-loader',
+    					options: {
+    						name: '[name].[ext]'
+    					},
+    				}
+                ],
+			}
         ]
     },
     plugins: [htmlPlugin, cssPlugin]

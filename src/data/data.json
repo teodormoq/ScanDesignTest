@@ -1,0 +1,56 @@
+[
+    {
+        "lat": 55.6964665,
+        "lng": 12.5969169,
+        "propertyType": {
+            "propertyTypeId": 2,
+            "name": "Apartment"
+        },
+        "zipCode": {
+            "zipCodeId": 2100,
+            "name": "København Ø"
+        },
+        "address": "Midtermolen 1",
+        "price": "10.500.000",
+        "size": "500",
+        "builtYear": "2010",
+        "totalNumberOfRooms": "12",
+        "image": "https://imageproxy-v2.services.lokalebasen.dk/825x500/dk/assets/713335/presentation.jpg?v=1513679200"
+    },
+    {
+        "lat": 55.689748,
+        "lng": 12.599677,
+        "propertyType": {
+            "propertyTypeId": 1,
+            "name": "House"
+        },
+        "zipCode": {
+            "zipCodeId": 1259,
+            "name": "København"
+        },
+        "address": "Nordre Toldbod 18-24",
+        "price": "2.000.000",
+        "size": "215",
+        "builtYear": "1986",
+        "totalNumberOfRooms": "4",
+        "image": "https://files.konference.dk/images/91DE1F69-6CA0-E611-B256-2C768A53ADCA.jpg"
+    },
+    {
+        "lat": 55.692499,
+        "lng": 12.587435,
+        "propertyType": {
+            "propertyTypeId": 1,
+            "name": "House"
+        },
+        "zipCode": {
+            "zipCodeId": 2100,
+            "name": "Østerport"
+        },
+        "address": "Østerport St.",
+        "price": "price",
+        "size": "150",
+        "builtYear": "1960",
+        "totalNumberOfRooms": "5",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/%C3%98sterport_station_2012.jpg/250px-%C3%98sterport_station_2012.jpg"
+    }
+]
