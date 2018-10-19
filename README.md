@@ -1,8 +1,8 @@
 Scandesign Media - Frontend Test
 ==========================
 
-The purpose of this case is for you to show your technical capabilities and that we can review and discuss this on the next interview.
-The test covers your technical competencies within JavaScript, CSS3 and HTML5. Also, will look after responsiveness.
+The purpose of this case is for you to show your technical capabilities that we can review and discuss on the next interview.
+The test covers your technical competencies within JavaScript, CSS3 and HTML5. Also, we will look after responsiveness.
 
 You are free to use whatever framework you want to.
 
