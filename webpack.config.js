@@ -1,12 +1,22 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin');
+
 const htmlPlugin = new HtmlWebPackPlugin({
     template: "./src/index.html",
-    filename: "./index.html"
+    filename: "./index.html",
+    svgoConfig: {
+        removeViewBox: true
+    },
 });
+
 const cssPlugin = new MiniCssExtractPlugin({
     filename: "[name].css",
     chunkFilename: "[id].css"
+});
+
+const SVGPlugin = new HtmlWebpackInlineSVGPlugin({
+    runPreEmit: true
 });
 
 const path = require('path');
@@ -34,21 +44,8 @@ module.exports = {
                     "postcss-loader",
                     "sass-loader"
                 ]
-            },
-			{
-				type: 'javascript/auto',
-				test: /\.json$/,
-				exclude: /(node_modules|bower_components)/,
-				use: [
-                    {
-    					loader: 'file-loader',
-    					options: {
-    						name: '[name].[ext]'
-    					},
-    				}
-                ],
-			}
+            }
         ]
     },
-    plugins: [htmlPlugin, cssPlugin]
+    plugins: [htmlPlugin, cssPlugin, SVGPlugin]
 };
